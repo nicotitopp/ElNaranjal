@@ -1,14 +1,14 @@
 <?php
- 
+
 $errorMSG = "";
- 
+
 // NAME
 if (empty($_POST["name"])) {
     $errorMSG = "Name is required ";
 } else {
     $name = $_POST["name"];
 }
- 
+
 // EMAIL
 if (empty($_POST["email"])) {
     $errorMSG .= "Email is required ";
@@ -42,19 +42,19 @@ if (empty($_POST["datetime"])) {
 // } else {
 //     $msg_subject = $_POST["msg_subject"];
 // }
- 
- 
+
+
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
 } else {
     $message = $_POST["message"];
 }
- 
+
 //Add your email here
-$EmailTo = "juanchobedoya4@gmail.com";
+$EmailTo = "restauranteelnaranjal@hotmail.com";
 $Subject = "Reservacion Restaurante";
- 
+
 // prepare email body text
 $Body = "";
 $Body .= "Nombre de la persona: ";
@@ -75,28 +75,29 @@ $Body .= "\n";
 $Body .= "Mensaje adicional: ";
 $Body .= $message;
 $Body .= "\n";
- 
+
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
- 
+
 // redirect to success page
 if ($success && $errorMSG == "") {
     echo "<script>
             alert('El correo se envió correctamente');
             window.location.href = '../reservations.html'; // Redirige a un nivel arriba, donde está el archivo HTML
-          </script>";
+        </script>";
 } else {
     if ($errorMSG == "") {
         echo "<script>
                 alert('Error al enviar correo');
                 window.location.href = '../reservations.html'; // Redirige a un nivel arriba, donde está el archivo HTML
-              </script>";
+            </script>";
     } else {
         echo "<script>
                 alert('Error: '+ " . json_encode($errorMSG) . ");
                 window.location.href = '../reservations.html'; // Redirige a un nivel arriba, donde está el archivo HTML después de mostrar el error
-              </script>";
+            </script>";
     }  
 }
+
 
 ?>

@@ -9,8 +9,8 @@ $("#reservationForm").validator().on("submit", function (event) {
         submitForm();
     }
 });
- 
- 
+
+
 function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#rname").val();
@@ -19,8 +19,8 @@ function submitForm(){
     var party = $("#party").val();
     var datetime = $("#datetimepicker1").val();
     var message = $("#rmessage").val();
- 
- 
+
+
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
@@ -36,7 +36,7 @@ function submitForm(){
         }
     });
 }
- 
+
 function formSuccess(msg){
     $("#php/form-process.php")[0].reset();
     submitMSG(true, msg);
@@ -68,7 +68,7 @@ function formError(){
         </div>
     `);
 }
- 
+
 function submitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center fadeIn animated text-success";

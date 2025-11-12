@@ -9,6 +9,34 @@ body {
   letter-spacing: 0.05em;
 }
 
+.navbar-nav .nav-item {
+  margin-right: 10px; 
+  padding-top: -10px;
+  
+}
+
+.navbar-nav img {
+  vertical-align: middle; 
+  height: 20px; 
+  margin-left: 5px; 
+  margin-right: 0; 
+  
+}
+/* Para vista en dispositivos móviles */
+@media (max-width: 768px) {
+  /* Mueve solo las banderas al lado derecho */
+  .navbar-nav.flags {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav.flags .nav-item {
+    margin-left: 10px; /* Espaciado entre banderas */
+  }
+}
+
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -768,15 +796,15 @@ a.btn {
 
 .btn-primary-filled, .btn-primary-filled:active, .btn-primary-filled:focus {
   color: white;
-  background: #bc9d4b;
-  border: 2px solid #bc9d4b;
+  background: #e67e22;
+  border: 2px solid #e67e22;
 }
 
 
 .btn-primary-filled:hover {
   color: white;
-  background: #927937;
-  border: 2px solid #927937;
+  background: #e67e10;
+  border: 2px solid #e67e10;
 }
 
 /* / End Primary Button */
@@ -2544,14 +2572,14 @@ footer p {
 /* End Footers */
 /* Scroll to Top */
 .scroll-to-top {
-  background: #bc9d4b;
+  background: #e67e22;
   color: white;
   width: 30px;
   height: 30px;
   bottom: 20px;
   right: 20px;
   line-height: 25px;
-  border: 2px solid #bc9d4b;
+  border: 2px solid #e67e30;
   border-radius: 50%;
   position: fixed;
   text-align: center;
@@ -2727,7 +2755,7 @@ footer p {
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: rgba(255, 255, 255, 0.35);
-    background: #192e44;
+    background: #2c1e17;
   }
 
   .navbar-default.top-nav-collapse .navbar-collapse, .navbar-default.top-nav-collapse .navbar-form {
