@@ -38,7 +38,6 @@ El sitio busca transmitir la esencia cálida del restaurante **El Naranjal**, co
 ## 📞 Contacto
 
 Creado por [Nicolás](https://github.com/nicotitopp) y [Bedoya](https://github.com/Juancho349) 🍊  
-Proyecto académico y de desarrollo web — Universidad del Valle.
 
 ---
 
