@@ -1,7 +1,6 @@
 # 🍊 El Naranjal
 
-**El Naranjal** es la página web oficial del restaurante del mismo nombre, un lugar donde la tradición y el sabor se encuentran.  
-Este proyecto fue diseñado para ofrecer una experiencia agradable, moderna y fácil de navegar, mostrando el menú, la historia del restaurante y las opciones de contacto.
+**El Naranjal** es la página web oficial del restaurante del mismo nombre, un lugar donde la tradición y el sabor se encuentran. Este proyecto fue diseñado para ofrecer una experiencia agradable, moderna y fácil de navegar, mostrando el menú, la historia del restaurante y las opciones de contacto.
 
 ---
 
